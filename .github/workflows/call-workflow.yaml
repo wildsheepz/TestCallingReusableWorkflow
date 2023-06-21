@@ -4,5 +4,5 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: wildsheepz/TestReusableWorkflow/.github/workflows/security-scanning.yaml@main
+    uses: wildsheepz/TestReusableWorkflow/.github/workflows/main.yaml@main
     secrets: inherit
