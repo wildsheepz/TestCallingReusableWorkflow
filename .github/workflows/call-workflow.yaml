@@ -3,6 +3,14 @@ on:
   workflow_dispatch:
 
 jobs:
+  echo-stuff:
+    runs-on: self-hosted
+    steps:
+      - name: print
+        run: |
+          pwd
+          ls -lah
+          env
   call-reusable-workflow:
     uses: wildsheepz/TestReusableWorkflow/.github/workflows/main.yaml@main
     secrets: inherit
